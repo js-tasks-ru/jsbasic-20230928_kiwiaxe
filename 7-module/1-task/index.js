@@ -72,7 +72,7 @@ export default class RibbonMenu {
 
   buttonUpdate = () => {
 	let scrollLeft = this.ribbonInner.scrollLeft;
-	let scrollRight = this.ribbonInner.scrollWidth - scrollLeft - this.ribbonInner.clientWidth
+	let scrollRight = this.ribbonInner.scrollWidth - scrollLeft - this.ribbonInner.clientWidth;
 
 	let leftArrow = this.elem.querySelector('.ribbon__arrow_left');
    let rightArrow = this.elem.querySelector('.ribbon__arrow_right');
