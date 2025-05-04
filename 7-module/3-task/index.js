@@ -8,6 +8,7 @@ export default class StepSlider {
     };
     this.elem = this.render();
 	 this.activeStepElement = null;
+	 this.sliderUpdate('0%', 0);
   }
   //отрисовка верстки
   render = () => {
@@ -34,6 +35,7 @@ export default class StepSlider {
 
   //обработчик клик на slider
 	slider.addEventListener('click', this.onSliderClick);
+
 	return slider
   };
 
@@ -57,7 +59,7 @@ export default class StepSlider {
 	 
 	 this.elem.dispatchEvent(
      new CustomEvent("slider-change", {
-       detail: this.config.value,
+       detail: value,
        bubbles: true,
      })
    );
