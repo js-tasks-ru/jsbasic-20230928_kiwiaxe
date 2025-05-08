@@ -15,7 +15,6 @@ export default class Cart {
 		cartItem.count++
 	}
 
-	console.log(this.cartItems)
 	this.onProductUpdate(cartItem);
   }
 

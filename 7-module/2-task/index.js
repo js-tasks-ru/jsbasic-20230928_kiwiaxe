@@ -20,8 +20,7 @@ export default class Modal {
 			<h3 class="modal__title"></h3>
         </div>
 
-		  <div class="modal__body">
-        </div>
+		  <div class="modal__body"></div>
 		`);
 
     modal.querySelector(".modal__close").addEventListener("click", (event) => {
