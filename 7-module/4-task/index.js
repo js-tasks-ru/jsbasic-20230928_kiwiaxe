@@ -78,7 +78,7 @@ export default class StepSlider {
   };
 
   onPointerUp = () => {
-    this.isDragging = true;
+    this.isDragging = false;
     this.thumb.style.position = "absolute";
     this.elem.classList.remove("slider_dragging");
     document.removeEventListener("pointermove", this.onPointerMove);
